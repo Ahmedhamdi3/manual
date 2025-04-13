@@ -1,0 +1,284 @@
+/* Sign In Page Styles */
+.sign-in {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.sign-in .form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sign-in p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.sign-in .form-group {
+  margin-bottom: 20px;
+}
+
+.sign-in label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.sign-in input[type="email"],
+.sign-in input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.sign-in input[type="email"]:focus,
+.sign-in input[type="password"]:focus {
+  border-color: #2d87f0;
+}
+
+.sign-in .btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #2d87f0;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.sign-in .btn:hover {
+  background-color: #1a6bb5;
+}
+
+.sign-in .forgot-password,
+.sign-in .signup-link {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.sign-in .forgot-password a,
+.sign-in .signup-link a {
+  color: #2d87f0;
+  text-decoration: none;
+}
+
+.sign-in .forgot-password a:hover,
+.sign-in .signup-link a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .sign-in .form-container {
+    padding: 20px;
+  }
+}
+
+
+
+/* Change Password Page Styles */
+.change-password {
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.change-password .form-container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.change-password h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.change-password p {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+.change-password .form-group {
+  margin-bottom: 20px;
+}
+
+.change-password label {
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.change-password input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.change-password input[type="password"]:focus {
+  border-color: #2d87f0;
+}
+
+.change-password .btn {
+  display: inline-block;
+  width: 100%;
+  padding: 12px 20px;
+  background-color: #2d87f0;
+  color: white;
+  text-align: center;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.change-password .btn:hover {
+  background-color: #1a6bb5;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .change-password .form-container {
+    padding: 20px;
+  }
+}
+
+
+
+/* Booking Form Styles */
+.booking-form {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.booking-form h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #333;
+}
+
+.booking-form p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #555;
+}
+
+/* Form Group Styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  font-size: 1rem;
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input[type="date"] {
+  font-size: 1rem;
+}
+
+.form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Button Styles */
+.form-group button {
+  background-color: #2d87f0; /* Updated to match the theme color */
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.form-group button:hover {
+  background-color: #1a6bb5; /* Hover color to match the overall theme */
+  transform: translateY(-2px);
+}
+
+.form-group button:active {
+  transform: translateY(1px);
+}
+
+/* Responsive Design for Booking Form */
+@media screen and (max-width: 768px) {
+  .booking-form {
+    padding: 1.5rem;
+  }
+
+  .booking-form h2 {
+    font-size: 1.8rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea,
+  .form-group button {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .booking-form {
+    padding: 1rem;
+  }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea,
+  .form-group button {
+    font-size: 0.9rem;
+  }
+}

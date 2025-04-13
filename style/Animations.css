@@ -1,0 +1,182 @@
+/* animations.css */
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Fade-in animation for sections when they come into view (on scroll) */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Hover animation for buttons */
+.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff6f61;  /* Change color on hover */
+  transform: scale(1.1);  /* Slightly enlarge the button */
+}
+
+/* Slide-in from left animation */
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 1s ease-out;
+}
+
+/* Slide-in from right animation */
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out;
+}
+
+/* Zoom-in effect for images */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.zoom-in {
+  animation: zoomIn 1s ease-out;
+}
+
+/* Bounce animation for buttons */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.bounce {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+/* Fade-in on scroll animation */
+.fade-on-scroll {
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.fade-on-scroll.visible {
+  opacity: 1;
+}
+
+/* Slide-in effect for images (on scroll) */
+@keyframes slideInImage {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-image {
+  animation: slideInImage 1.2s ease-out;
+}
+
+/* Shake effect for error messages */
+@keyframes shake {
+  0% {
+    transform: translateX(-10px);
+  }
+  25% {
+    transform: translateX(10px);
+  }
+  50% {
+    transform: translateX(-10px);
+  }
+  75% {
+    transform: translateX(10px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Rotate effect */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 1s linear infinite;
+}
+
+/* Sliding animation for navigation items */
+@keyframes slideNavItem {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.nav-item {
+  animation: slideNavItem 0.5s ease-out;
+}

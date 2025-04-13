@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up - Hawaii Hotel</title>
+  <link rel="stylesheet" href="../style/global.css">
+  <link rel="stylesheet" href="../style/hero.css">
+  <link rel="stylesheet" href="../style/forms.css">
+  <link rel="stylesheet" href="../style/services.css">
+  <link rel="stylesheet" href="../style/rooms.css">
+  <link rel="stylesheet" href="../style/Account.css">
+  <link rel="stylesheet" href="../style/about us.css">
+  <link rel="stylesheet" href="../style/Contact.css">
+  <link rel="stylesheet" href="../style/SignUp.css">
+  <link rel="stylesheet" href="../style/Animations.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">
+      <a href="index.html">Hawaii Hotel</a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="Room.html">Rooms</a>
+      <a href="Restuarnts.html">Restaurants</a>
+      <a href="Reservation.html">Reservations</a>
+      <a href="About Us.html">About Us</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+    <div class="right-nav">
+      <div class="language-dropdown">
+        <button class="dropdown-btn">Language</button>
+        <div class="dropdown-menu">
+          <a href="#">English</a>
+          <a href="#">Spanish</a>
+          <a href="#">French</a>
+          <a href="#">German</a>
+          <a href="#">Italian</a>
+        </div>
+      </div>
+      <div class="user-account">
+        <button class="dropdown-btn">
+          <i class="fa fa-user"></i> Account
+        </button>
+        <div class="dropdown-menu">
+          <a href="profile.html">My Profile</a>
+          <a href="/logout">Logout</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Sign Up Section -->
+  <section class="signup-section section">
+    <h2>Create Your Account</h2>
+    <form action="submit-signup.php" method="POST" class="form-container">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your full name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" required placeholder="Enter your email">
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+      </div>
+      <div class="form-group">
+        <label for="passport-id">National or Passport ID</label>
+        <input type="text" id="passport-id" name="passport-id" required placeholder="Enter your National/Passport ID">
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required placeholder="Choose a password">
+      </div>
+      <div class="form-group">
+        <label for="confirm-password">Confirm Password</label>
+        <input type="password" id="confirm-password" name="confirm-password" required placeholder="Confirm your password">
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </div>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Hawaii Hotel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

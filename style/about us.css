@@ -1,0 +1,100 @@
+/* About Us Page Styles */
+#about-us {
+  padding: 80px 20px;
+  background-color: #f4f7fb;
+  font-family: 'Arial', sans-serif;
+  color: #333;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #2d87f0; /* Consistent theme color */
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 40px;
+  text-align: center;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* About Content */
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.about-image {
+  width: 45%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.about-details {
+  width: 45%;
+}
+
+.about-details h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.about-details p {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-image,
+  .about-details {
+    width: 100%;
+    text-align: center;
+  }
+
+  .about-image img {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .about-details h3 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}

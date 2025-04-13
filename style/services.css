@@ -1,0 +1,103 @@
+/* Services Section */
+.services-section {
+  padding: 60px 20px;
+  background-color: #f9f9f9;
+  text-align: center;
+}
+
+.services-section h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Service Card */
+.service-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+  width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 30px;
+}
+
+/* Image for Service Card */
+.service-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Service Card Title */
+.service-card h3 {
+  font-size: 22px;
+  color: #444;
+  padding: 15px 20px 5px;
+}
+
+/* Service Card Description */
+.service-card p {
+  font-size: 14px;
+  color: #666;
+  padding: 0 20px 15px;
+}
+
+/* Link/Button in Service Card */
+.service-card a {
+  display: block;
+  text-align: center;
+  margin: 0 20px 20px;
+  padding: 10px 15px;
+  background-color: #0078D7;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect on Link/Button */
+.service-card a:hover {
+  background-color: #005bb5;
+  transform: translateY(-2px);
+}
+
+/* Hover Effect on Service Card */
+.service-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .service-card {
+    width: 45%; /* Adjust for medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .service-card {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  .services-section h1 {
+    font-size: 2.5rem;
+  }
+
+  .service-card h3 {
+    font-size: 20px;
+  }
+
+  .service-card p {
+    font-size: 12px;
+  }
+}

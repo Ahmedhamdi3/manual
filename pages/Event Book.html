@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Your Event - Hawaii Hotel</title>
+    <link rel="stylesheet" href="../style/global.css">
+    <link rel="stylesheet" href="../style/hero.css">
+    <link rel="stylesheet" href="../style/forms.css">
+    <link rel="stylesheet" href="../style/services.css">
+    <link rel="stylesheet" href="../style/rooms.css">
+    <link rel="stylesheet" href="../style/Account.css">
+    <link rel="stylesheet" href="../style/about_us.css">
+    <link rel="stylesheet" href="../style/Contact.css">
+    <link rel="stylesheet" href="../style/Restuarnts.css">
+</head>
+
+<body>
+    <!-- Navigation Bar -->
+<!-- Navigation Bar -->
+  <header class="navbar">
+<!-- Add this inside the navbar -->
+<div class="hamburger" onclick="toggleMenu()">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>
+
+
+
+    <div class="logo">
+      <a href="index.html">Hawaii Hotel</a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="Room.html">Rooms</a>
+      <a href="Restuarnts.html">Restaurants</a>
+      <a href="Reservation.html">Reservations</a>
+      <a href="Events Page.html">Events</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+    <div class="right-nav">
+      <!-- Language Dropdown -->
+      <div class="language-dropdown">
+        <button class="dropdown-btn">Language</button>
+        <div class="dropdown-menu">
+          <a href="#">English</a>
+          <a href="#">Spanish</a>
+          <a href="#">French</a>
+          <a href="#">German</a>
+          <a href="#">Italian</a>
+        </div>
+      </div>
+      <!-- User Account/Profile Section -->
+      <div class="user-account">
+        <button class="dropdown-btn">
+          <i class="fa fa-user"></i> Account
+        </button>
+        <div class="dropdown-menu">
+          <a href="Profile.html">My Profile</a>
+          <a href="/logout">Logout</a>
+        </div>
+      </div>
+
+      <!-- Sign Up / Sign In Buttons (visible when not logged in) -->
+      <div class="auth-buttons">
+        <a href="Sign up.html" class="btn">Sign Up</a>
+        <a href="Sign In.html" class="btn">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+     <!-- Event Booking Form Section -->
+    <section class="event-booking-form">
+        <h2>Book Your Event</h2>
+        <p>Fill out the form below to book your event at Hawaii Hotel.</p>
+        <form action="submit-event-booking.php" method="POST">
+            <div class="form-group">
+                <label for="guest-name">Guest Name</label>
+                <input type="text" id="guest-name" name="guest_name" required placeholder="Enter guest name">
+            </div>
+            <div class="form-group">
+                <label for="room-number">Room Number</label>
+                <input type="text" id="room-number" name="room_number" required placeholder="Enter room number">
+            </div>
+            <div class="form-group">
+                <label for="birthday">Guest's Birthday</label>
+                <input type="date" id="birthday" name="birthday" required>
+            </div>
+            <div class="form-group">
+                <label for="event">Select Event</label>
+                <select id="event" name="event" required>
+                    <option value="" disabled selected>Select an event</option>
+                    <option value="wedding">Sunset Beach Dinner
+</option>
+                    <option value="conference">Live Jazz Night</option>
+                    <option value="British Afternoon Tea">Birthday Party</option>
+
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="num-persons">Number of Persons</label>
+                <select id="num-persons" name="num_persons" required>
+                    <option value="" disabled selected>Select number of persons</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5+">5+</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit">Book Event</button>
+            </div>
+        </form>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 Hawaii Hotel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

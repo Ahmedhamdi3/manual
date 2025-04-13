@@ -1,0 +1,90 @@
+/* Profile Page Styles */
+.profile-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  border: 3px solid #f1f1f1; /* Light border around avatar */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.user-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: #333; /* Ensure the text color is consistent */
+}
+
+.user-info p {
+  font-size: 1.1rem;
+  margin: 0.2rem 0;
+  color: #666;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile-actions .btn {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.3s;
+}
+
+.btn-primary {
+  background-color: #2d87f0; /* Updated to match theme */
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1a6bb5; /* Updated hover to match theme */
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+@media screen and (max-width: 768px) {
+  .profile-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .avatar {
+    margin-bottom: 1rem;
+  }
+
+  .profile-actions {
+    flex-direction: column;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+}

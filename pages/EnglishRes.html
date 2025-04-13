@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Cuisine - Hawaii Hotel</title>
+  <link rel="stylesheet" href="../style/global.css">
+  <link rel="stylesheet" href="../style/hero.css">
+  <link rel="stylesheet" href="../style/forms.css">
+  <link rel="stylesheet" href="../style/English.css"> <!-- New CSS File -->
+  <link rel="stylesheet" href="../style/Animations.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="hamburger" onclick="toggleMenu()">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+
+    <div class="logo">
+      <a href="index.html">Hawaii Hotel</a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="Room.html">Rooms</a>
+      <a href="Restuarnts.html">Restaurants</a>
+      <a href="Reservation.html">Reservations</a>
+      <a href="Events Page.html">Events</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+    <div class="right-nav">
+      <div class="language-dropdown">
+        <button class="dropdown-btn">Language <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-menu">
+          <a href="#">English</a>
+          <a href="#">Spanish</a>
+          <a href="#">French</a>
+          <a href="#">German</a>
+          <a href="#">Italian</a>
+        </div>
+      </div>
+      <div class="user-account">
+        <button class="dropdown-btn"><i class="fa fa-user"></i> Account <i class="fa fa-caret-down"></i></button>
+        <div class="dropdown-menu">
+          <a href="/profile">My Profile</a>
+          <a href="/logout">Logout</a>
+        </div>
+      </div>
+      <div class="auth-buttons">
+        <a href="Sign up.html" class="btn">Sign Up</a>
+        <a href="Sign In.html" class="btn">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- English Cuisine Section -->
+  <section id="english-cuisine" class="section">
+    <div class="room-image">
+      <img src="../assets/restaurants/English Cuisine.jpg" alt="Ocean View Room" class="room-image">
+      <p>Experience traditional English dishes in a cozy, elegant setting.</p>
+    </div>
+
+    <div class="restaurant-info">
+      <h3>About Our English Restaurant</h3>
+      <p>Experience the best of British cuisine, from classic fish and chips to hearty pies and delicious roasts.</p>
+    </div>
+
+    <div class="table-container">
+      <h3>Available Tables</h3>
+      <div class="table-list">
+        <div class="table">
+          <img src="../assets/restaurants/tables/date.jpg" alt="Table 1" class="table-image">
+          <p>Table 1</p>
+          <button class="btn btn-primary">Book Table</button>
+        </div>
+        <div class="table">
+          <img src="../assets/restaurants/tables/family.jpg" alt="Table 2" class="table-image">
+          <p>Table 2</p>
+          <button class="btn btn-primary">Book Table</button>
+        </div>
+        <div class="table">
+          <img src="../assets/restaurants/tables/first.jpg" alt="Table 3" class="table-image">
+          <p>Table 3</p>
+          <button class="btn btn-primary">Book Table</button>
+        </div>
+        <div class="table">
+          <img src="../assets/restaurants/tables/simple.jpg" alt="Table 4" class="table-image">
+          <p>Table 4</p>
+          <button class="btn btn-primary">Book Table</button>
+        </div>
+        <div class="table">
+          <img src="../assets/restaurants/tables/quite.jpg" alt="Table 5" class="table-image">
+          <p>Table 5</p>
+          <button class="btn btn-primary">Book Table</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Hawaii Hotel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hawaii Hotel - Home</title>
+  <link rel="stylesheet" href="../style/global.css">
+  <link rel="stylesheet" href="../style/hero.css">
+  <link rel="stylesheet" href="../style/forms.css">
+  <link rel="stylesheet" href="../style/services.css">
+  <link rel="stylesheet" href="../style/rooms.css">
+  <link rel="stylesheet" href="../style/Account.css">
+  <link rel="stylesheet" href="../style/about us.css">
+  <link rel="stylesheet" href="../style/Contact.css">
+  <link rel="stylesheet" href="../style/Restuarnts.css">
+  <link rel="stylesheet" href="../style/Animations.css">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header class="navbar">
+   <!-- Add this inside the navbar -->
+<div class="hamburger" onclick="toggleMenu()">
+  <span class="bar"></span>
+  <span class="bar"></span>
+  <span class="bar"></span>
+</div>
+    <div class="logo">
+      <a href="index.html">Hawaii Hotel</a>
+    </div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="Room.html">Rooms</a>
+      <a href="Restuarnts.html">Restaurants</a>
+      <a href="Reservation.html">Reservations</a>
+      <a href="Events Page.html">Events</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+    <div class="right-nav">
+      <!-- Language Dropdown -->
+      <div class="language-dropdown">
+        <button class="dropdown-btn">Language</button>
+        <div class="dropdown-menu">
+          <a href="#">English</a>
+          <a href="#">Spanish</a>
+          <a href="#">French</a>
+          <a href="#">German</a>
+          <a href="#">Italian</a>
+        </div>
+      </div>
+      <!-- User Account/Profile Section -->
+      <div class="user-account">
+        <button class="dropdown-btn">
+          <i class="fa fa-user"></i> Account
+        </button>
+        <div class="dropdown-menu">
+          <a href="Profile.html">My Profile</a>
+          <a href="/logout">Logout</a>
+        </div>
+      </div>
+
+      <!-- Sign Up / Sign In Buttons (visible when not logged in) -->
+      <div class="auth-buttons">
+        <a href="Sign up.html" class="btn">Sign Up</a>
+        <a href="Sign In.html" class="btn">Sign In</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to Hawaii Hotel</h1>
+      <p>Your dream vacation starts here!</p>
+      <div class="hero-buttons">
+        <!-- Link to the Booking Page -->
+        <a href="Book.html" class="btn btn-primary">Book Now</a>
+        <a href="contact.html" class="btn btn-secondary">Contact Us</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <h2>About Us</h2>
+    <p>Hawaii Hotel is your home away from home. Experience luxury, comfort, and the beauty of Hawaii like never before.</p>
+  </section>
+
+  <!-- Rooms Section -->
+  <section id="rooms" class="section">
+    <h2>Our Rooms</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="../assets/Deluxe Suite.jpg" alt="Deluxe Suite">
+        <h3>Deluxe Suite</h3>
+        <p>Enjoy stunning views and unparalleled comfort in our Deluxe Suite.</p>
+      </div>
+      <div class="card">
+        <img src="../assets/Ocean View Room.jpg" alt="Ocean View Room">
+        <h3>Ocean View Room</h3>
+        <p>Wake up to breathtaking ocean views every day in our Ocean View Room.</p>
+      </div>
+      <div class="card">
+        <img src="../assets/Family Room.jpg" alt="Family Room">
+        <h3>Family Room</h3>
+        <p>Perfect for families, with plenty of space and all the amenities you need.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Restaurants Section -->
+  <section id="restaurants" class="section">
+    <h2>Our Restaurants</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="../assets/Beach Grill.jpg" alt="Restaurant 1">
+        <h3>The Beach Grill</h3>
+        <p>Enjoy fresh seafood and tropical cocktails right on the beach.</p>
+      </div>
+      <div class="card">
+        <img src="../assets/Island Flavors.jpg" alt="Restaurant 2">
+        <h3>Island Flavors</h3>
+        <p>Experience local Hawaiian cuisine with a modern twist.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <h2>Our Services</h2>
+    <div class="card-container">
+      <div class="card">
+        <img src="../assets/Spa.jpg" alt="Spa">
+        <h3>Spa & Wellness</h3>
+        <p>Relax and rejuvenate with our luxurious spa services.</p>
+      </div>
+      <div class="card">
+        <img src="../assets/gym.jpg" alt="Gym">
+        <h3>Fitness Center</h3>
+        <p>Stay fit with state-of-the-art equipment in our fitness center.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <h2>Contact Us</h2>
+    <p>For any inquiries, feel free to get in touch with us!</p>
+    <p>Email: info@hawaiihotel.com | Phone: +1 234 567 890</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2025 Hawaii Hotel. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
